@@ -33,6 +33,7 @@ function CardGrid() {
           name={god.godName}
           position={god.position}
           description={god.description}
+          key={god.godName}
         />
       ))}
     </div>
@@ -41,14 +42,14 @@ function CardGrid() {
 
 function Card({ image, name, position, description }) {
   return (
-    <div className="god-card">
-      <img className="god-image" src={image} alt={name}></img>
+    <article className="god-card">
+      <img className="god-image" src={image} alt={name} loading="lazy"></img>
       <div className="god-content">
         <p className="god-name">{name}</p>
         <p className="god-position">{position}</p>
         <p className="god-description">{description}</p>
       </div>
-    </div>
+    </article>
   );
 }
 
