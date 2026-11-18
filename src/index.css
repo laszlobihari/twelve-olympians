@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3efe7;
+  color: #292521;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #625c54;
+  font-size: 1.1rem;
+  margin-top: 15px;
+
+  max-width: 700px;
+  margin: 15px auto 0;
+  line-height: 1.6;
+}
+
+/* Container for all twelve gods */
+
+.gods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Individual god card */
+
+.god-card {
+  background-color: #ffffff;
+  padding: 8px 8px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Classical painting */
+
+.god-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+
+/* White information section */
+
+.god-content {
+  padding: 28px 30px 32px;
+}
+
+/* Name of the deity */
+
+.god-name {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #292521;
+  margin-bottom: 8px;
+}
+
+/* Position / domain */
+
+.god-position {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #b08d57;
+  margin-bottom: 18px;
+}
+
+/* Description */
+
+.god-description {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #756c61;
+  text-align: justify;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 700px) {
+  .gods-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
